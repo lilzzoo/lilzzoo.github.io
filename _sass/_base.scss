@@ -167,19 +167,52 @@ ul.task-list input[type="checkbox"] {
 // Card
 
 .card {
-  background-color: var(--global-card-bg-color);
+  background-color: transparent;
 
   .card-img {
     width: 100%;
-    padding-top: 1.25rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
   }
 
   .card-title {
     color: var(--global-text-color);
+    font-size: 1rem;
+  }
+
+  .card-subtitle {
+    font-size: 0;
+    margin-bottom: 1rem;
+    span.full {
+      font-size: 0.8rem;
+      color:#ffd900;
+    }
+
+    span.empty {
+      font-size: 0.8rem;
+      color:#D3D3D3;
+    }
+
+    span.overflow {
+      font-size: 0.8rem;
+      color: #ff0000;
+    }
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card-footer {
+    border-top: 0;
+    background-color: transparent;
+    text-align: right;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    font-style: italic;
   }
 }
 
@@ -1341,4 +1374,32 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+.grid-item { 
+  width: 175px;
+}
+
+.books {
+  h2.rating {
+    color: var(--global-text-color-light);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+
+    span.full {
+      font-size: 1rem;
+      color:#ffd900;
+      display: table-cell;
+    }
+
+    span.overflow {
+      font-size: 1rem;
+      color: #ff0000;
+      display: table-cell;
+    }
+  }
 }
